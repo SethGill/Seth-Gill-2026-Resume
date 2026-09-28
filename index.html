@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Click to Enter Visual-->
+    <div class id="intro">
+    <div id="intro-content">
+        <h1>Seth Gill</h1>
+        <p>Click to Enter...</p>
+    </div>
+ </div>
  <header>
     <h1>Seth Gill</h1>
         <p>Eager to learn computer science student!</p>
@@ -45,5 +52,21 @@
         </ul>
     </section>
 </main>
+<!--click sound fx-->>
+<audio id="enterSound" src="Kingdom Hearts Sound Effects Select.mp3"></audio>
+
+<script>
+    const intro = document.getElementById("intro");
+    const enterSound = document.getElementById("enterSound");
+
+    intro.addEventListener("click", function() {
+        enterSound.play();
+        intro.classList.add("fade-out");
+
+        setTimeout(function() {
+            intro.style.display = "none";
+        }, 1000);
+     });
+</script>
 </body>
 </html>

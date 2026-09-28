@@ -78,3 +78,52 @@ li {
         padding: 20px;
     }
 }
+
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-color: #411754;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    cursor: pointer;
+
+    z-index: 1000;
+
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.intro-content {
+    transition: transform 1s ease,
+                opacity 1s ease;
+}
+
+.intro-content h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.intro-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+#intro.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#intro.fade-out .intro-content {
+    transform: scale(1.15);
+    opacity: 0;
+}
