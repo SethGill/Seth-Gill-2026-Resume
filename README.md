@@ -1,2 +1,2 @@
 # Seth-Gill-2026-Resume
-Credentials, Information, and Projects
+Seth Gill Resume, as of 9/28/26 
